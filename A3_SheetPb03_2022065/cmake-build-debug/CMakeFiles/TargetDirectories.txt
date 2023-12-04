@@ -1,3 +1,0 @@
-F:/FCAI/sem3/OOP/Assignments/Assignment3/Task#1/Q3/cmake-build-debug/CMakeFiles/Q3.dir
-F:/FCAI/sem3/OOP/Assignments/Assignment3/Task#1/Q3/cmake-build-debug/CMakeFiles/edit_cache.dir
-F:/FCAI/sem3/OOP/Assignments/Assignment3/Task#1/Q3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
