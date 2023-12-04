@@ -1,0 +1,3 @@
+C:/Users/Ahmed/CLionProjects/A3_SheetPb01_20220025/cmake-build-debug/CMakeFiles/LabelGenrator.dir
+C:/Users/Ahmed/CLionProjects/A3_SheetPb01_20220025/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ahmed/CLionProjects/A3_SheetPb01_20220025/cmake-build-debug/CMakeFiles/rebuild_cache.dir

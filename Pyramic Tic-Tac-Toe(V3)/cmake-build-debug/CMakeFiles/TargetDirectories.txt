@@ -1,0 +1,3 @@
+C:/Users/Ahmed/CLionProjects/Pyramic Tic-Tac-Toe(V3)/cmake-build-debug/CMakeFiles/Pyramic_Tic_Tac_Toe_V3_.dir
+C:/Users/Ahmed/CLionProjects/Pyramic Tic-Tac-Toe(V3)/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ahmed/CLionProjects/Pyramic Tic-Tac-Toe(V3)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
