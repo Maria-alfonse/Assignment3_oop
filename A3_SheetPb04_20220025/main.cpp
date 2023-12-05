@@ -5,12 +5,13 @@ template<typename T>
 class Set{
 private:
     vector<T>MySet;
+    void sort();
 public:
     void Add(T Item);
     void Pop(T Item);
     int Size();
     bool if_IN(T Item);
-    T* PTR();
+    shared_ptr<T[]> PTR();
 
 
 
@@ -19,6 +20,7 @@ template<typename T>
 void Set<T>::Add(T Item) {
     if(find(MySet.begin(), MySet.end(),Item) == MySet.end()){
         MySet.push_back(Item);
+        sort();
     }else{
         return;
     }
@@ -27,6 +29,7 @@ template<typename T>
 void Set<T>::Pop(T Item){
     auto itr = find(MySet.begin(), MySet.end(),Item);
     if(itr == MySet.end()){
+        cout<<"OUT OF RANGE";
         return;
     }else{
         MySet.erase(itr);
@@ -46,19 +49,25 @@ bool Set<T>::if_IN(T Item){
     }
 }
 template<typename T>
-T* Set<T>::PTR() {
-    T* arr = new T[this->Size()];
+shared_ptr<T[]> Set<T>::PTR() {
+    shared_ptr<T[]> arr ( new T[this->Size()]);
 
     for (int i = 0; i < this->Size(); ++i) {
         arr[i] = MySet[i];
     }
     return arr;
 }
+template<typename T>
+void Set<T>::sort() {
+    std::sort(MySet.begin(), MySet.end());
+    return;
+}
 int main() {
     BUFFALO
     Set<int>S1;
     S1.Add(1);
     S1.Add(2);
+    S1.Add(8);
     S1.Add(3);
     S1.Add(1);
     S1.Add(4);
@@ -73,7 +82,6 @@ int main() {
 
     }
     cout << endl;
-    delete[] returnedArray;
     Set<string>S2;
     S2.Add("Ahmed");
     S2.Add("Abdelaziz");
@@ -90,11 +98,10 @@ int main() {
         cout <<returnedArray2[i]<<" ";
 
     }
-    delete[] returnedArray2;
+
 
 
 
 
     return 0;
 }
-
