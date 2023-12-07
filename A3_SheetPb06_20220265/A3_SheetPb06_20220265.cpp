@@ -1,3 +1,10 @@
+//File Name: A3_SheetPb06_20220265
+//Purpose: A program that implements the Game of Life cellular automaton proposed by John Horton Conway.
+//Author: Maria Alfons
+//ID: 20220265
+//Section: S5
+//Date: Dec 7, 2023
+
 #include <bits/stdc++.h>
 using namespace std;
 
