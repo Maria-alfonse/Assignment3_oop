@@ -1,3 +1,11 @@
+//File Name: A3_SheetPb03_20220265
+//Purpose: count the occurrence of words in a file and displays it
+//Author: Maria Alfons
+//ID: 20220265
+//Section: S5
+//Date: Dec 5, 2023
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -40,9 +48,11 @@ void scanner(string name){
 
         string word;
         for(int i=0 ; i<line.size() ; i++){
+            //if the char is a letter or -, we add it to the word
             if(isalpha(line[i]) || line[i] == '-'){
                 word+= line[i];
             }else{
+                //else we check if word is not empty then we increase the count of its appearance in the text then we clear the word variable
                 if(!word.empty()){
                     words[word]++;
                     word.clear();
@@ -50,6 +60,7 @@ void scanner(string name){
             }
         }
     }
+    //cout the map
     for(const auto& i:words){
         cout<<i.first<<": "<<i.second<<'\n';
     }
