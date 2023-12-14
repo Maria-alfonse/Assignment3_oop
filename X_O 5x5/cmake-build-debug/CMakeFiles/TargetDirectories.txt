@@ -1,0 +1,3 @@
+F:/FCAI/sem3/OOP/Assignments/Assignment3/Task#2/X_O 5x5/cmake-build-debug/CMakeFiles/X_O_5x5.dir
+F:/FCAI/sem3/OOP/Assignments/Assignment3/Task#2/X_O 5x5/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/FCAI/sem3/OOP/Assignments/Assignment3/Task#2/X_O 5x5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
