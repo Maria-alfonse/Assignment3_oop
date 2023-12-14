@@ -13,7 +13,7 @@ int main() {
     players[0] = new Player (1, 'x');
 
     cout << "Welcome to FCAI X-O Game. :)\n";
-    cout << "Press 1 if you want to play with computer: ";
+    cout << "Press 1 if you want to play with computer else press 2: ";
     cin >> choice;
     if (choice != 1)
         players[1] = new Player (2, 'o');
