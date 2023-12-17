@@ -88,15 +88,17 @@ bool A5x5_Board::is_winner() {
             }
         }
     }
-    cout<<"Player X: "<<who_is_winner['X']<<'\n';
-    cout<<"Player O: "<<who_is_winner['O']<<'\n';
+    if(game_is_over()) {
+        cout << "Player X: " << who_is_winner['X'] << '\n';
+        cout << "Player O: " << who_is_winner['O'] << '\n';
 
-    if(who_is_winner['X']>who_is_winner['O']){
-        cout<<"X is the winner!\n";
-    }else if(who_is_winner['X'] == who_is_winner['O']){
-        cout<<"Draw!\n";
-    }else{
-        cout<<"O is the winner!\n";
+        if (who_is_winner['X'] > who_is_winner['O']) {
+            cout << "X is the winner!\n";
+        } else if (who_is_winner['X'] == who_is_winner['O']) {
+            cout << "Draw!\n";
+        } else {
+            cout << "O is the winner!\n";
+        }
     }
     return 0;
 }
